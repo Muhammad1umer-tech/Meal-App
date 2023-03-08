@@ -44,7 +44,8 @@ class DrawerTab extends StatelessWidget {
           return Navigator.of(context).pushReplacementNamed('/');
         }),
         listTile('Setting', Icons.settings, () {
-          return Navigator.of(context).pushReplacementNamed(filter.routename3);
+          return Navigator.of(context)
+              .pushReplacementNamed(FiltersScreen.routename);
         }),
       ]),
     );

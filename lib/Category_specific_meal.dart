@@ -102,9 +102,11 @@ class Category_specific_Style extends StatelessWidget {
       //   onPressed: () => Navigator.of(context).pop(id),
       // ),
       floatingActionButton: FloatingActionButton(
-        child: Icon(isMealFavorite(id) ? Icons.star : Icons.star_border),
-        onPressed: () => _toggle_favorite(id),
-      ),
+          child: Icon(isMealFavorite(id) ? Icons.star : Icons.star_border),
+          onPressed: () {
+            _toggle_favorite(id);
+            Navigator.of(context).pop();
+          }),
     );
   }
 }

@@ -79,7 +79,8 @@ class _myappState extends State<myapp> {
         '/category-detail': ((context) => Category_detail(_available_meal)),
         Category_specific_Style.routename2: (context) =>
             Category_specific_Style(_toggle_favorite, isMealFavorite),
-        filter.routename3: (context) => filter(_set_Filters, _filters),
+        FiltersScreen.routename: (context) =>
+            FiltersScreen(_set_Filters, _filters),
       },
     );
   }
